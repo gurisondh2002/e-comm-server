@@ -14,13 +14,13 @@ module.exports = {
 
     getAllProduct: async (req, res) => {
         console.log("hello")
-        try {
-            const products = await Product.find().sort({ createdAt: -1 });
-            res.status(200).json(products);
-        } catch (err) {
-            console.log(err);
-            res.status(500).json("Failed to get all the product...");
-        }
+        // try {
+        //     const products = await Product.find().sort({ createdAt: -1 });
+        //     res.status(200).json(products);
+        // } catch (err) {
+        //     console.log(err);
+        //     res.status(500).json("Failed to get all the product...");
+        // }
     },
     getProduct: async (req, res) => {
         try {
